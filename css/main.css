@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
 * {
   border: 0;
   margin: 0;
@@ -33,5 +34,29 @@ body {
 ol,
 ul {
   list-style-type: none;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #28283e;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+}
+
+h2,
+h3 {
+  color: #28283e;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+p {
+  color: #86869c;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 /*# sourceMappingURL=main.css.map */
