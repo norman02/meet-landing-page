@@ -36,20 +36,38 @@ ul {
   list-style-type: none;
 }
 
+/* variables -- Colors */
+/* variables - colors - text */
+/* variables - colors - backgrounds */
+/* Functions */
+/* placeholders */
+h1,
+h2,
+h3,
+p {
+  margin: 0 6.4vw;
+}
+
+/* Typography */
 body {
   font-family: 'Red Hat Display', sans-serif;
   text-align: center;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   color: #28283e;
+  font-weight: 900;
+}
+
+h1 {
   font-size: 2.5rem;
   line-height: 2.75rem;
 }
 
 h2,
 h3 {
-  color: #28283e;
   font-size: 2rem;
   line-height: 2.25rem;
 }
@@ -57,6 +75,50 @@ h3 {
 p {
   color: #86869c;
   font-size: 1rem;
+  font-weight: 500;
   line-height: 1.625rem;
+}
+
+/* Header */
+header .logo {
+  background-image: url("../assets/logo.svg");
+  background-size: cover;
+  height: 1.75rem;
+  margin: 3rem auto 3.5rem auto;
+  width: 7.375rem;
+}
+
+header .hero--left {
+  background-image: url("../assets/tablet/image-hero.png");
+  background-position: -15px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40.8vw;
+  width: 100vw;
+}
+
+header h1 {
+  margin-top: 3rem;
+}
+
+header p {
+  margin-bottom: 2.3125rem;
+  margin-top: 1rem;
+}
+
+header .btn {
+  margin: 0 auto 1rem auto;
+}
+
+/* Buttons */
+.btn {
+  background-color: #845eb0;
+  color: white;
+  display: inline-block;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.625rem;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */
