@@ -7,7 +7,7 @@
 h1,
 h2,
 h3,
-p {
+p, .home--two {
   margin: 0 6.4vw;
 }
 
@@ -166,5 +166,58 @@ header .btn {
 
 .home {
   margin-top: 4rem;
+}
+
+.home--two {
+  display: grid;
+  column-gap: 1.5rem;
+  grid-template-columns: auto auto;
+  row-gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.home--two .image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  height: 8.9375rem;
+  width: 9.4375rem;
+}
+
+.home--two--A {
+  background-image: url("../assets/desktop/image-woman-in-videocall.jpg");
+}
+
+.home--two--B {
+  background-image: url("../assets/desktop/image-women-videochatting.jpg");
+}
+
+.home--two--C {
+  background-image: url("../assets/desktop/image-men-in-meeting.jpg");
+}
+
+.home--two--D {
+  background-image: url("../assets/desktop/image-man-texting.jpg");
+}
+
+.home--three {
+  margin-top: 3.75rem;
+}
+
+.home--three h2 {
+  color: #4d96a8;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+}
+
+.home--three h3 {
+  margin-top: 2.0625rem;
+}
+
+.home--three p {
+  margin-bottom: 4.3125rem;
+  margin-top: 1.5625rem;
 }
 /*# sourceMappingURL=main.css.map */

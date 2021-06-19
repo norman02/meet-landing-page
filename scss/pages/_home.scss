@@ -1,0 +1,57 @@
+.home {
+    margin-top: toRem(64); 
+ 
+    &--two {
+        @extend %margin;
+        display: grid;
+        column-gap: toRem(24);
+        grid-template-columns: auto auto;
+        row-gap: toRem(24);
+        margin-top: toRem(64);
+ 
+        .image {
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            height: toRem(143);
+            width: toRem(151);
+        }
+ 
+        &--A {
+           background-image: url('../assets/desktop/image-woman-in-videocall.jpg'); 
+        }
+ 
+        &--B {
+            background-image: url('../assets/desktop/image-women-videochatting.jpg');
+        }
+ 
+        &--C {
+            background-image: url('../assets/desktop/image-men-in-meeting.jpg');
+        }
+ 
+        &--D {
+            background-image: url('../assets/desktop/image-man-texting.jpg');
+        }
+    }
+ 
+    &--three {
+        margin-top: toRem(60);
+ 
+        h2 {
+            color: $text-highlight;
+            font-size: toRem(16);
+            letter-spacing: 4px;
+            line-height: toRem(26);
+            text-transform: uppercase;
+        }
+ 
+        h3 {
+            margin-top: toRem(33);
+        }
+ 
+        p {
+            margin-bottom: toRem(69);
+            margin-top: toRem(25);
+        }
+    }
+ }
