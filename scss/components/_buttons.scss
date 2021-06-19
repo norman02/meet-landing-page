@@ -1,0 +1,26 @@
+/* Buttons */
+.btn {
+    background-color: $button-bg-color;
+    border-radius: 29px;
+    color: $button-text-color;
+    display: inline-block;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: toRem(16);
+    font-weight: 900;
+    line-height: toRem(26);  
+    padding: toRem(12) toRem(40) toRem(25) toRem(40);
+    text-transform: uppercase;
+
+    span {
+        color: $button-highlight-color;
+        margin-left: toRem(5);
+    }
+
+    &--dark {
+        background-color: $dark-button-bg;
+
+        span {
+            color: $dark-button-highlight;
+        }
+    }
+}
