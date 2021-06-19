@@ -1,0 +1,35 @@
+/* Header */ 
+header {
+    .logo {
+        background-image: url('../assets/logo.svg');
+        background-size: cover; 
+        height: toRem(28);
+        margin: toRem(48) auto toRem(56) auto;
+        width: toRem(118);
+    }
+
+    .hero {
+        &--left {
+            background-image: url('../assets/tablet/image-hero.png');
+            background-position: -15px center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40.8vw; 
+            width: 100vw;
+        }
+    }
+
+    h1 {
+        margin-top: toRem(48);
+    }
+
+    p {
+        margin-bottom: toRem(37);
+        margin-top: toRem(16);
+        
+    }
+
+    .btn {
+        margin: 0 auto toRem(16) auto;
+    }
+}

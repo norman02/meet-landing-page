@@ -1,0 +1,40 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+    @extend %margin;
+}
+
+h1,
+h2,
+h3 {
+    color: $primar-heading-color;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: toRem(40); 
+    line-height: toRem(44);
+}
+
+h2,
+h3 {
+    font-size: toRem(32);
+    line-height: toRem(36);
+}
+
+p{
+    color: $primary-text-color;
+    font-size: toRem(16);
+    font-weight: 500;
+    line-height: toRem(26);
+}

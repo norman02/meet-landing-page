@@ -1,0 +1,19 @@
+/* variables -- Colors */
+$light-blue: hsla(192, 90%, 77%, 1);
+$blue-green: hsla(192, 37%, 48%, 1);
+$light-grayish-blue: hsla(240, 10%, 57%, 1);
+$light-purple: hsla(268, 100%, 86%, 1);
+$purple: hsla(268, 34%, 53%, 1);
+$very-dark-blue: hsla(240, 21%, 20%, 1);
+$white: hsla(0, 0%, 100%, 1);
+
+/* variables - colors - text */
+$button-highlight-color: $light-blue;
+$button-text-color: $white;
+$primar-heading-color: $very-dark-blue;
+$primary-text-color: $light-grayish-blue;
+
+/* variables - colors - backgrounds */
+$button-bg-color: $blue-green;
+$dark-button-bg: $purple;
+$dark-button-highlight: $light-purple;

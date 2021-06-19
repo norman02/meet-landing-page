@@ -1,4 +1,16 @@
+/* variables -- Colors */
+/* variables - colors - text */
+/* variables - colors - backgrounds */
+/* Functions */
+/* placeholders */
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+h1,
+h2,
+h3,
+p {
+  margin: 0 6.4vw;
+}
+
 * {
   border: 0;
   margin: 0;
@@ -36,18 +48,6 @@ ul {
   list-style-type: none;
 }
 
-/* variables -- Colors */
-/* variables - colors - text */
-/* variables - colors - backgrounds */
-/* Functions */
-/* placeholders */
-h1,
-h2,
-h3,
-p {
-  margin: 0 6.4vw;
-}
-
 /* Typography */
 body {
   font-family: 'Red Hat Display', sans-serif;
@@ -79,6 +79,33 @@ p {
   line-height: 1.625rem;
 }
 
+/* Buttons */
+.btn {
+  background-color: #4d96a8;
+  border-radius: 29px;
+  color: white;
+  display: inline-block;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.625rem;
+  padding: 0.75rem 2.5rem 1.5625rem 2.5rem;
+  text-transform: uppercase;
+}
+
+.btn span {
+  color: #90e4f9;
+  margin-left: 0.3125rem;
+}
+
+.btn--dark {
+  background-color: #845eb0;
+}
+
+.btn--dark span {
+  color: #d9b8ff;
+}
+
 /* Header */
 header .logo {
   background-image: url("../assets/logo.svg");
@@ -108,17 +135,5 @@ header p {
 
 header .btn {
   margin: 0 auto 1rem auto;
-}
-
-/* Buttons */
-.btn {
-  background-color: #845eb0;
-  color: white;
-  display: inline-block;
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 1rem;
-  font-weight: 900;
-  line-height: 1.625rem;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */
