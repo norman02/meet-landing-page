@@ -164,6 +164,51 @@ header .btn {
   margin: 0 auto 1rem auto;
 }
 
+footer {
+  position: relative;
+  margin-top: -1.6875rem;
+  padding-bottom: 4.5rem;
+  padding-top: 5.75rem;
+}
+
+footer h2 {
+  color: white;
+  margin-top: 5.75rem;
+}
+
+footer p {
+  color: white;
+  margin-bottom: 2.1875rem;
+  margin-top: 1.0625rem;
+}
+
+footer::after {
+  content: "";
+  background-image: url("../assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+footer::before {
+  content: "";
+  background-color: #4d96a8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
 .home {
   margin-top: 4rem;
 }

@@ -1,0 +1,44 @@
+footer {
+    position: relative;
+    margin-top: toRem(-27);
+    padding-bottom: toRem(72);
+    padding-top: toRem(92);
+    
+    h2 {
+        color: white;
+        margin-top: toRem(92);
+    }
+
+    p {
+        color: white;
+        margin-bottom: toRem(35);
+        margin-top: toRem(17);
+    }
+
+    &::after {
+        content: "";
+        background-image: url('../assets/mobile/image-footer.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        left: 0;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &::before {
+        content: "";
+        background-color: $footer-bg-color;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+    }
+}
