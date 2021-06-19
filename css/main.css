@@ -214,11 +214,13 @@ footer::before {
 }
 
 .home--two {
+  align-items: center;
   display: grid;
   column-gap: 1.5rem;
   grid-template-columns: auto auto;
-  row-gap: 1.5rem;
+  justify-content: center;
   margin-top: 4rem;
+  row-gap: 1.5rem;
 }
 
 .home--two .image {

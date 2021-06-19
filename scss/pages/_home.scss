@@ -3,11 +3,13 @@
  
     &--two {
         @extend %margin;
+        align-items: center;
         display: grid;
         column-gap: toRem(24);
         grid-template-columns: auto auto;
-        row-gap: toRem(24);
+        justify-content: center;
         margin-top: toRem(64);
+        row-gap: toRem(24);
  
         .image {
             background-size: contain;
