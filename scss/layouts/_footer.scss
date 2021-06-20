@@ -3,6 +3,10 @@ footer {
     margin-top: toRem(-27);
     padding-bottom: toRem(72);
     padding-top: toRem(92);
+
+    @include media-md {
+        padding-bottom: toRem(66);
+    }
     
     h2 {
         color: white;
@@ -13,6 +17,11 @@ footer {
         color: white;
         margin-bottom: toRem(35);
         margin-top: toRem(17);
+
+        @include media-md {
+            margin-bottom: toRem(43);
+            margin-top: toRem(23);
+        }
     }
 
     &::after {
@@ -27,6 +36,10 @@ footer {
         top: 0;
         width: 100%;
         z-index: -1;
+
+        @include media-md {
+            background-image: url('../assets/tablet/image-footer.jpg');
+        }
     }
 
     &::before {

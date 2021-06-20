@@ -11,7 +11,7 @@ p, .home--two {
   margin: 0 6.4vw;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   h1,
   h2,
   h3,
@@ -75,7 +75,7 @@ h1 {
   line-height: 2.75rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   h1 {
     font-size: 3rem;
     line-height: 3rem;
@@ -88,7 +88,7 @@ h3 {
   line-height: 2.25rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   h2,
   h3 {
     font-size: 2.5rem;
@@ -175,6 +175,10 @@ p {
 }
 
 /* Header */
+header {
+  overflow: hidden;
+}
+
 header .logo {
   background-image: url("../assets/logo.svg");
   background-size: cover;
@@ -183,7 +187,7 @@ header .logo {
   width: 7.375rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   header .logo {
     margin: 3.1875rem auto 4.125rem auto;
   }
@@ -198,7 +202,7 @@ header .hero--left {
   width: 110vw;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   header .hero--left {
     height: 49.54vw;
   }
@@ -208,7 +212,7 @@ header h1 {
   margin-top: 3rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   header h1 {
     margin-top: 4.5rem;
   }
@@ -219,7 +223,7 @@ header p {
   margin-top: 1rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   header p {
     margin-top: 0.5rem;
   }
@@ -232,7 +236,7 @@ header .btn-container {
   row-gap: 1rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   header .btn-container {
     column-gap: 1rem;
     grid-template-columns: auto auto;
@@ -246,6 +250,12 @@ footer {
   padding-top: 5.75rem;
 }
 
+@media screen and (min-width: 600px) {
+  footer {
+    padding-bottom: 4.125rem;
+  }
+}
+
 footer h2 {
   color: white;
   margin-top: 5.75rem;
@@ -255,6 +265,13 @@ footer p {
   color: white;
   margin-bottom: 2.1875rem;
   margin-top: 1.0625rem;
+}
+
+@media screen and (min-width: 600px) {
+  footer p {
+    margin-bottom: 2.6875rem;
+    margin-top: 1.4375rem;
+  }
 }
 
 footer::after {
@@ -269,6 +286,12 @@ footer::after {
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+@media screen and (min-width: 600px) {
+  footer::after {
+    background-image: url("../assets/tablet/image-footer.jpg");
+  }
 }
 
 footer::before {
@@ -295,6 +318,12 @@ footer .btn-container {
   margin-top: 4rem;
 }
 
+@media screen and (min-width: 600px) {
+  .home {
+    margin-top: 5rem;
+  }
+}
+
 .home--two {
   align-items: center;
   display: grid;
@@ -305,12 +334,27 @@ footer .btn-container {
   row-gap: 1.5rem;
 }
 
+@media screen and (min-width: 600px) {
+  .home--two {
+    column-gap: 0.6875rem;
+    grid-template-columns: repeat(4, auto);
+    margin-top: 4.1875rem 0;
+  }
+}
+
 .home--two .image {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 8px;
   height: 8.9375rem;
   width: 9.4375rem;
+}
+
+@media screen and (min-width: 600px) {
+  .home--two .image {
+    height: 9.75rem;
+    width: 10.25rem;
+  }
 }
 
 .home--two--A {
@@ -333,6 +377,12 @@ footer .btn-container {
   margin-top: 3.75rem;
 }
 
+@media screen and (min-width: 600px) {
+  .home--three {
+    margin-top: 2.75rem;
+  }
+}
+
 .home--three h2 {
   color: #4d96a8;
   font-size: 1rem;
@@ -345,8 +395,21 @@ footer .btn-container {
   margin-top: 2.0625rem;
 }
 
+@media screen and (min-width: 600px) {
+  .home--three h3 {
+    margin-top: 1.5625rem;
+  }
+}
+
 .home--three p {
   margin-bottom: 4.3125rem;
   margin-top: 1.5625rem;
+}
+
+@media screen and (min-width: 600px) {
+  .home--three p {
+    margin-bottom: 5.3125rem;
+    margin-top: 1.4375rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,9 @@
 .home {
     margin-top: toRem(64); 
+
+    @include media-md {
+        margin-top: toRem(80);
+    }
  
     &--two {
         @extend %margin;
@@ -10,6 +14,12 @@
         justify-content: center;
         margin-top: toRem(64);
         row-gap: toRem(24);
+
+        @include media-md {
+            column-gap: toRem(11);
+            grid-template-columns: repeat(4, auto);
+            margin-top: toRem(67) 0;
+        }
  
         .image {
             background-size: contain;
@@ -17,6 +27,11 @@
             border-radius: 8px;
             height: toRem(143);
             width: toRem(151);
+
+            @include media-md {
+                height: toRem(156);
+                width: toRem(164);
+            }
         }
  
         &--A {
@@ -38,6 +53,10 @@
  
     &--three {
         margin-top: toRem(60);
+
+        @include media-md {
+            margin-top: toRem(44);
+        }
  
         h2 {
             color: $text-highlight;
@@ -45,15 +64,25 @@
             letter-spacing: 4px;
             line-height: toRem(26);
             text-transform: uppercase;
+
         }
  
         h3 {
             margin-top: toRem(33);
+
+            @include media-md {
+                margin-top: toRem(25);
+            }
         }
  
         p {
             margin-bottom: toRem(69);
             margin-top: toRem(25);
+
+            @include media-md {
+                margin-bottom: toRem(85);
+                margin-top: toRem(23);
+            }
         }
     }
  }

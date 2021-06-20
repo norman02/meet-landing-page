@@ -1,5 +1,8 @@
 /* Header */ 
 header {
+
+    overflow: hidden;
+    
     .logo {
         background-image: url('../assets/logo.svg');
         background-size: cover; 
