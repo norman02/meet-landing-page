@@ -3,12 +3,13 @@
     background-color: $button-bg-color;
     border-radius: 29px;
     color: $button-text-color;
-    display: inline-block;
+    display: block;
     font-family: 'Red Hat Display', sans-serif;
     font-size: toRem(16);
     font-weight: 900;
     line-height: toRem(26);  
     padding: toRem(12) toRem(40) toRem(25) toRem(40);
+    margin: 0 auto;
     text-transform: uppercase;
 
     &:hover {
