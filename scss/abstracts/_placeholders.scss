@@ -1,4 +1,8 @@
 /* placeholders */
 %margin {
     margin: 0 6.4vw;
+
+    @include media-md {
+        margin: 0 12.76vw;
+    }
 }

@@ -24,12 +24,22 @@ h3 {
 h1 {
     font-size: toRem(40); 
     line-height: toRem(44);
+
+    @include media-md {
+        font-size: toRem(48);
+        line-height: toRem(48);
+    }
 }
 
 h2,
 h3 {
     font-size: toRem(32);
     line-height: toRem(36);
+
+    @include media-md {
+        font-size: toRem(40);
+        line-height: toRem(44);
+    }
 }
 
 p{
@@ -37,4 +47,5 @@ p{
     font-size: toRem(16);
     font-weight: 500;
     line-height: toRem(26);
+
 }
