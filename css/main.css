@@ -93,6 +93,18 @@ p {
   text-transform: uppercase;
 }
 
+.btn:hover {
+  background-color: #72c1d5;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 2px solid #b28cde;
+}
+
 .btn span {
   color: #90e4f9;
   margin-left: 0.3125rem;
@@ -100,6 +112,10 @@ p {
 
 .btn--dark {
   background-color: #845eb0;
+}
+
+.btn--dark:hover {
+  background-color: #b28cde;
 }
 
 .btn--dark span {

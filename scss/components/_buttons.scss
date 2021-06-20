@@ -11,6 +11,18 @@
     padding: toRem(12) toRem(40) toRem(25) toRem(40);
     text-transform: uppercase;
 
+    &:hover {
+        background-color: $button-active-color;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        outline: 2px solid $dark-button-active;
+    }
+
     span {
         color: $button-highlight-color;
         margin-left: toRem(5);
@@ -18,6 +30,10 @@
 
     &--dark {
         background-color: $dark-button-bg;
+
+        &:hover {
+            background-color: $dark-button-active;
+        }
 
         span {
             color: $dark-button-highlight;
