@@ -29,6 +29,11 @@ h1 {
         font-size: toRem(48);
         line-height: toRem(48);
     }
+
+    @include media-lg {
+        font-size: toRem(64);
+        line-height: toRem(64);
+    }
 }
 
 h2,
@@ -48,4 +53,8 @@ p{
     font-weight: 500;
     line-height: toRem(26);
 
+    @include media-lg {
+        font-size: toRem(18);
+        line-height: toRem(26);
+    }
 }
