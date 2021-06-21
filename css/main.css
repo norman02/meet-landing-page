@@ -202,6 +202,17 @@ header {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1000px) {
+  header {
+    align-items: center;
+    column-gap: 2.5rem;
+    display: grid;
+    grid-template-areas: '. A .' 'B C D';
+    grid-template-columns: 31.31vw 37.37vw 31.31vw;
+    justify-content: center;
+  }
+}
+
 header .logo {
   background-image: url("../assets/logo.svg");
   background-size: cover;
@@ -213,6 +224,19 @@ header .logo {
 @media screen and (min-width: 600px) {
   header .logo {
     margin: 3.1875rem auto 4.125rem auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header .logo {
+    grid-area: A;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header .one {
+    grid-area: C;
+    width: 37.37vw;
   }
 }
 
@@ -231,6 +255,28 @@ header .hero--left {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  header .hero--left {
+    background-image: url("../assets/desktop/image-hero-left.png");
+    background-position: center;
+    grid-area: B;
+    height: 24.78vw;
+    width: 31.31vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header .hero--right {
+    background-image: url("../assets/desktop/image-hero-right.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24.78vw;
+    grid-area: D;
+    width: 31.31vw;
+  }
+}
+
 header h1 {
   margin-top: 3rem;
 }
@@ -238,6 +284,12 @@ header h1 {
 @media screen and (min-width: 600px) {
   header h1 {
     margin-top: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header h1 {
+    margin: 0 3rem;
   }
 }
 
@@ -249,6 +301,14 @@ header p {
 @media screen and (min-width: 600px) {
   header p {
     margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header p {
+    margin: 0;
+    margin-bottom: 2.1875rem;
+    margin-top: 0.8125rem;
   }
 }
 

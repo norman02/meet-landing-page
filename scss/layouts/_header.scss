@@ -2,6 +2,15 @@
 header {
 
     overflow: hidden;
+
+    @include media-lg {
+        align-items: center;
+        column-gap: toRem(40);
+        display: grid;
+        grid-template-areas: '. A .' 'B C D';
+        grid-template-columns: 31.31vw 37.37vw 31.31vw;
+        justify-content: center;
+    }
     
     .logo {
         background-image: url('../assets/logo.svg');
@@ -12,6 +21,17 @@ header {
 
         @include media-md {
             margin: toRem(51) auto toRem(66) auto;
+        }
+
+        @include media-lg {
+            grid-area: A;
+        }
+    }
+
+    .one {
+        @include media-lg {
+            grid-area: C;
+            width: 37.37vw;
         }
     }
 
@@ -27,6 +47,26 @@ header {
             @include media-md {
                 height: 49.54vw;
             }
+
+            @include media-lg {
+                background-image: url('../assets/desktop/image-hero-left.png');
+                background-position: center;
+                grid-area: B;
+                height: 24.78vw;
+                width: 31.31vw;
+            }
+        }
+
+        &--right {
+            @include media-lg {
+                background-image: url('../assets/desktop/image-hero-right.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 24.78vw;
+                grid-area: D;
+                width: 31.31vw;
+            }
         }
     }
 
@@ -36,6 +76,10 @@ header {
         @include media-md {
             margin-top: toRem(72);
         }
+
+        @include media-lg {
+            margin: 0 toRem(48);
+        }
     }
 
     p {
@@ -44,6 +88,12 @@ header {
         
         @include media-md {
             margin-top: toRem(8);
+        }
+
+        @include media-lg {
+            margin: 0;
+            margin-bottom: toRem(35);
+            margin-top: toRem(13);
         }
     }
 
