@@ -407,6 +407,12 @@ footer .btn-container {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .home {
+    margin-top: 7.3125rem;
+  }
+}
+
 .home--two {
   align-items: center;
   display: grid;
@@ -421,7 +427,12 @@ footer .btn-container {
   .home--two {
     column-gap: 0.6875rem;
     grid-template-columns: repeat(4, auto);
-    margin-top: 4.1875rem 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home--two {
+    column-gap: 1.875rem;
   }
 }
 
@@ -437,6 +448,13 @@ footer .btn-container {
   .home--two .image {
     height: 9.75rem;
     width: 10.25rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home--two .image {
+    height: 15.125rem;
+    width: 15.9375rem;
   }
 }
 
@@ -463,6 +481,12 @@ footer .btn-container {
 @media screen and (min-width: 600px) {
   .home--three {
     margin-top: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three {
+    margin-top: 4.75rem;
   }
 }
 
@@ -493,6 +517,12 @@ footer .btn-container {
   .home--three p {
     margin-bottom: 5.3125rem;
     margin-top: 1.4375rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three p {
+    margin-bottom: 4.6875rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
