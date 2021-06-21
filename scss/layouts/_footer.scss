@@ -7,10 +7,24 @@ footer {
     @include media-md {
         padding-bottom: toRem(66);
     }
+
+    @include media-lg {
+        align-items: center;
+        display: flex;
+        padding-bottom: toRem(117);
+        padding-top: toRem(116);
+        justify-content: space-evenly;
+    }
     
     h2 {
         color: white;
         margin-top: toRem(92);
+
+        @include media-lg {
+            margin: 0;
+            text-align: left;
+            width: toRem(350);
+        }
     }
 
     p {
@@ -21,6 +35,12 @@ footer {
         @include media-md {
             margin-bottom: toRem(43);
             margin-top: toRem(23);
+        }
+
+        @include media-lg {
+            margin: 0;
+            text-align: left;
+            width: toRem(350);
         }
     }
 
@@ -39,6 +59,10 @@ footer {
 
         @include media-md {
             background-image: url('../assets/tablet/image-footer.jpg');
+        }
+
+        @include media-lg {
+            background-image: url('../assets/desktop/image-footer.jpg');
         }
     }
 

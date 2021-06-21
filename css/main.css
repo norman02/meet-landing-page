@@ -339,9 +339,27 @@ footer {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  footer {
+    align-items: center;
+    display: flex;
+    padding-bottom: 7.3125rem;
+    padding-top: 7.25rem;
+    justify-content: space-evenly;
+  }
+}
+
 footer h2 {
   color: white;
   margin-top: 5.75rem;
+}
+
+@media screen and (min-width: 1000px) {
+  footer h2 {
+    margin: 0;
+    text-align: left;
+    width: 21.875rem;
+  }
 }
 
 footer p {
@@ -354,6 +372,14 @@ footer p {
   footer p {
     margin-bottom: 2.6875rem;
     margin-top: 1.4375rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  footer p {
+    margin: 0;
+    text-align: left;
+    width: 21.875rem;
   }
 }
 
@@ -374,6 +400,12 @@ footer::after {
 @media screen and (min-width: 600px) {
   footer::after {
     background-image: url("../assets/tablet/image-footer.jpg");
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  footer::after {
+    background-image: url("../assets/desktop/image-footer.jpg");
   }
 }
 
